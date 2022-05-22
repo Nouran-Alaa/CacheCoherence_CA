@@ -174,7 +174,7 @@ MODIFIED ---> INVAILD
 
 **Accesses number: 10**
 
-<img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/Access_Number%2010.png?raw=true" style="zoom:80%;" /> 
+<img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/Access_Number%2010.PNG?raw=true" style="zoom:80%;" /> 
 
 ```
 
@@ -193,7 +193,7 @@ Node P[1] Seek block -> 273
 
 **State Transition In Cache:**
 
-<img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/State_Transition%2010.png?raw=true" style="zoom:80%;" /> 
+<img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/State_Transition%2010.PNG?raw=true" style="zoom:80%;" /> 
 
 ```
 INVAILD ---> MODIFIED
