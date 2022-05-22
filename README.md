@@ -174,7 +174,7 @@ MODIFIED ---> INVAILD
 
 **Accesses number: 10**
 
-<img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/Access_Number%2010.PNG?raw=true" style="zoom:80%;" /> 
+<img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/Access_Number%2010.png?raw=true" style="zoom:80%;" /> 
 
 ```
 
@@ -193,7 +193,7 @@ Node P[1] Seek block -> 273
 
 **State Transition In Cache:**
 
-<img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/State_Transition%2010.PNG?raw=true" style="zoom:80%;" /> 
+<img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/State_Transition%2010.png?raw=true" style="zoom:80%;" /> 
 
 ```
 INVAILD ---> MODIFIED
@@ -204,7 +204,7 @@ INVAILD ---> MODIFIED
 
 Accesses number: 11
 
-<img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/State_Transition%2011.PNG?raw=true" style="zoom:80%;" />
+<img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/Access_Number%2011.png?raw=true" style="zoom:80%;" />
 
 ```
 Node P[0] Seek block -> 273
@@ -214,7 +214,7 @@ Node P[0] Seek block -> 273
 
 **State Transition In Cache:**
 
-<img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/State_Transition%2011.PNG?raw=true" style="zoom:80%;" />
+<img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/State_Transition%2011.png?raw=true" style="zoom:80%;" />
 
 
 
@@ -228,7 +228,7 @@ MODIFIED ---> INVAILD
 
 Accesses number: 12
 
-<img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/State_Transition%2012.PNG?raw=true" style="zoom:80%;" />
+<img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/Access_Number%2012.PNG?raw=true" style="zoom:80%;" />
 
 ```
 Node P[0] Seek block -> 273
@@ -244,7 +244,7 @@ Node P[0] Seek block -> 273
 
 **State Transition In Cache:**
 
-<img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/State_Transition%2012.PNG?raw=true" style="zoom:80%;" />
+<img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/State_Transition%2012.png?raw=true" style="zoom:80%;" />
 
 
 
@@ -256,7 +256,7 @@ INVAILD ---> SHARED
 
 Accesses number: 13
 
-<img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/State_Transition%2013.PNG?raw=true" style="zoom:80%;" />
+<img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/Access_Number%2013.png?raw=true" style="zoom:80%;" />
 
 ```
 Node P[0] Seek block -> 273
@@ -266,7 +266,7 @@ Node P[0] Seek block -> 273
 
 **State Transition In Cache:**
 
-<img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/State_Transition%2013.PNG?raw=true" style="zoom:80%;" />
+<img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/State_Transition%2013.png?raw=true" style="zoom:80%;" />
 
 
 
@@ -278,7 +278,7 @@ SHARED ---> SHARED
 
 Accesses number: 14
 
-<img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/State_Transition%2014.PNG?raw=true" style="zoom:80%;" />
+<img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/Access_Number%2014.png?raw=true" style="zoom:80%;" />
 
 ```
 Node P[0] Seek block -> 273
@@ -288,7 +288,7 @@ Node P[0] Seek block -> 273
 
 **State Transition In Cache:**
 
-<img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/State_Transition%2014.PNG?raw=true" style="zoom:80%;" />
+<img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/State_Transition%2014.png?raw=true" style="zoom:80%;" />
 
 
 
@@ -300,7 +300,7 @@ SHARED ---> SHARED
 
 Accesses number: 15
 
-<img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/State_Transition%2015.PNG?raw=true" style="zoom:80%;" />
+<img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/Access_Number%2015.png?raw=true" style="zoom:80%;" />
 
 ```
 Node P[0] Seek block -> 273
@@ -310,7 +310,7 @@ Node P[0] Seek block -> 273
 
 **State Transition In Cache:**
 
-<img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/State_Transition%2015.PNG?raw=true" style="zoom:80%;" />
+<img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/State_Transition%2015.png?raw=true" style="zoom:80%;" />
 
 
 
@@ -322,7 +322,7 @@ SHARED ---> SHARED
 
 Accesses number: 16
 
-<img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/State_Transition%2016.PNG" style="zoom:80%;" />
+<img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/Access_Number%2016.png" style="zoom:80%;" />
 
 ```
 Node P[0] Seek block -> 546
@@ -335,7 +335,7 @@ Node P[0] Seek block -> 546
 
 **State Transition In Cache:**
 
-<img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/State_Transition%2016.PNG?raw=true" style="zoom:80%;" />
+<img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/State_Transition%2016.png?raw=true" style="zoom:80%;" />
 
 
 
