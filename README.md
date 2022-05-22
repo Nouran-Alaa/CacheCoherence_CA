@@ -567,4 +567,3 @@ Node P[0] Seek block -> 2457
 P[0] : INVALID ---> MODIFIED
 P[1] : MODIFIED ---> INVALID
 ```
-***
