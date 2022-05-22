@@ -357,7 +357,7 @@ Node P[0] Seek block -> 546
 **State Transition In Cache:**
 
 ```
-P[0] : MODIFIED ---> MODIFIED <br \>
+P[0] : MODIFIED ---> MODIFIED
 P[1] : MODIFIED ---> INVALID
 ```
 ***
@@ -396,7 +396,7 @@ Node P[0] Seek block -> 546
 **State Transition In Cache:**
 
 ```
-P[0] : MODIFIED ---> MODIFIED <br \>
+P[0] : MODIFIED ---> MODIFIED 
 P[1] : MODIFIED ---> INVALID
 ```
 
@@ -438,7 +438,7 @@ Node P[0] Seek block -> 819
 **State Transition In Cache:**
 
 ```
-P[0] : INVALID ---> MODIFIED <br \>
+P[0] : INVALID ---> MODIFIED
 P[1] : MODIFIED ---> INVALID
 ```
 ***
@@ -459,7 +459,7 @@ Node P[0] Seek block -> 1092
 **State Transition In Cache:**
 
 ```
-P[0] : INVALID ---> MODIFIED <br \>
+P[0] : INVALID ---> MODIFIED
 P[1] : MODIFIED ---> INVALID
 ```
 ***
