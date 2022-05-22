@@ -464,4 +464,107 @@ P[1] : MODIFIED ---> INVALID
 ```
 ***
 
+> **Accesses number: 23**
 
+<img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/23.png" style="zoom:80%;" />
+
+```
+Node P[0] Seek block -> 1365
+	1.- Writing request (PrWr)
+	2.- Miss in cache
+	3.- Bus exclusive reading request (BusRdX)
+	4.- The bus arbiter grants bus to node P0
+	5.- Transfer of block 1365 from main memory
+```
+
+**State Transition In Cache:**
+
+```
+P[0] : INVALID ---> MODIFIED
+P[1] : MODIFIED ---> INVALID
+```
+***
+
+> **Accesses number: 24**
+
+<img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/24.png" style="zoom:80%;" />
+
+```
+Node P[0] Seek block -> 1638
+	1.- Writing request (PrWr)
+	2.- Miss in cache
+	3.- Bus exclusive reading request (BusRdX)
+	4.- The bus arbiter grants bus to node P0
+	5.- Transfer of block 1638 from main memory
+```
+
+**State Transition In Cache:**
+
+```
+P[0] : INVALID ---> MODIFIED
+P[1] : MODIFIED ---> INVALID
+```
+***
+
+> **Accesses number: 25**
+
+<img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/25.png" style="zoom:80%;" />
+
+```
+Node P[0] Seek block -> 1911
+	1.- Writing request (PrWr)
+	2.- Miss in cache
+	3.- Bus exclusive reading request (BusRdX)
+	4.- The bus arbiter grants bus to node P0
+	5.- Transfer of block 1911 from main memory
+```
+
+**State Transition In Cache:**
+
+```
+P[0] : INVALID ---> MODIFIED
+P[1] : MODIFIED ---> INVALID
+```
+***
+
+> **Accesses number: 26**
+
+<img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/26.png" style="zoom:80%;" />
+
+```
+Node P[0] Seek block -> 2184
+	1.- Writing request (PrWr)
+	2.- Miss in cache
+	3.- Bus exclusive reading request (BusRdX)
+	4.- The bus arbiter grants bus to node P0
+	5.- Transfer of block 2184 from main memory
+```
+
+**State Transition In Cache:**
+
+```
+P[0] : INVALID ---> MODIFIED
+P[1] : MODIFIED ---> INVALID
+```
+***
+
+> **Accesses number: 27**
+
+<img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/27.png" style="zoom:80%;" />
+
+```
+Node P[0] Seek block -> 2457
+	1.- Writing request (PrWr)
+	2.- Miss in cache
+	3.- Bus exclusive reading request (BusRdX)
+	4.- The bus arbiter grants bus to node P0
+	5.- Transfer of block 2457 from main memory
+```
+
+**State Transition In Cache:**
+
+```
+P[0] : INVALID ---> MODIFIED
+P[1] : MODIFIED ---> INVALID
+```
+***
