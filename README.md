@@ -8,24 +8,24 @@ To simulate the output we are using SMPCache simulator which comes with a pre-co
 
 #### Following is the **State Transition Diagram** for MSI Protocol
 
-<img src="H:\Colleage\3\Second Term\Computer Architecture\project\CacheCoherence_CA\assets\image9.png" alt="image-20220522074641709" style="zoom:67%;" />
+<img src="./assets/image9.png" alt="image-20220522074641709" style="zoom:67%;" />
 
 **The basic MSI protocol with the Modified, Shared and Invalid states.**
 
-<img src="H:\Colleage\3\Second Term\Computer Architecture\project\CacheCoherence_CA\assets\MSI.png" alt="alt text" style="zoom:80%;" />
+<img src="./assets/MSI.png" alt="alt text" style="zoom:80%;" />
 
 ## Simulator Configuration
 
 1. Open SMPCache simulator and choose `Load Configuration` from **file** menu.
 2. On the opened window go to the following path `C:\PROGRAM FILES (X86)\ARCO\SMPCACHE\EXAMPLES\SMP\` and choose `ConfigMSI.cfg` to load the MSI protocol pre-configured files.
 
-<img src="H:\Colleage\3\Second Term\Computer Architecture\project\CacheCoherence_CA\assets\imag134.png" alt="image-20220522075527134" style="zoom:95%;" />
+<img src="./assets/imag134.png" alt="image-20220522075527134" style="zoom:95%;" />
 
 as seen on the right of this picture, this config contains 2 processes and cache of size 256 Bytes each with a bock size of 16 Bytes.
 
 3. Now from **file** menu choose `Open memory traces` and go to this path`C:\PROGRAM FILES (X86)\ARCO\SMPCACHE\EXAMPLES\SMP\` then on top right corner load P0 and P1 with `MSI1.prg`.
 
-<img src="H:\Colleage\3\Second Term\Computer Architecture\project\CacheCoherence_CA\assets\ima713.png" alt="image-20220522082418713" style="zoom:95%;" />
+<img src="./assets/ima713.png" alt="image-20220522082418713" style="zoom:95%;" />
 
 4. Now your program is ready for simulation and from **View**  menu choose `Cache Evolution` and make sure `Processor cache is 1`
 
@@ -33,7 +33,7 @@ as seen on the right of this picture, this config contains 2 processes and cache
 
 > **Accesses number: 1**
 
-<img src="H:\Colleage\3\Second Term\Computer Architecture\project\CacheCoherence_CA\assets\image-20220522082637698.png" alt="image-20220522082637698" style="zoom:80%;" />
+<img src="./assets/image-20220522082637698.png" alt="image-20220522082637698" style="zoom:80%;" />
 
 ```
 Node P[0] Seek block -> 273
@@ -52,7 +52,7 @@ INVALID ---> SHARED
 
 >  **Accesses number: 2, 3, 4, 5**
 
-<img src="H:\Colleage\3\Second Term\Computer Architecture\project\CacheCoherence_CA\assets\imag84.png" alt="image-20220522083307284" style="zoom:80%;" />
+<img src="./assets/imag84.png" alt="image-20220522083307284" style="zoom:80%;" />
 
 ```
 Node P[0] Seek block -> 273
