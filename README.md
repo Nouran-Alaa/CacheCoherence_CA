@@ -1,4 +1,4 @@
-# CACHE COHERENCE SIMULATIO
+# CACHE COHERENCE SIMULATION
 
 In this repository we are presenting the Cache Coherence MSI Protocol to analyze how would cache perform under various workloads.
 
@@ -21,13 +21,13 @@ To simulate the output we are using SMPCache simulator which comes with a pre-co
 
 <img src="./assets/imag134.png" alt="image-20220522075527134" style="zoom:95%;" />
 
-as seen on the right of this picture, this config contains 2 processes and cache of size 256 Bytes each with a bock size of 16 Bytes.
+as seen on the right of this picture, this config contains 2 processes and cache of size 256 Bytes each with a block size of 16 Bytes.
 
 3. Now from **file** menu choose `Open memory traces` and go to this path`C:\PROGRAM FILES (X86)\ARCO\SMPCACHE\EXAMPLES\SMP\` then on top right corner load P0 and P1 with `MSI1.prg`.
 
 <img src="./assets/ima713.png" alt="image-20220522082418713" style="zoom:95%;" />
 
-4. Now your program is ready for simulation and from **View**  menu choose `Cache Evolution` and make sure `Processor cache is 1`
+4. Now your program is ready for simulation and from **View**  menu choose `Cache Evolution` and make sure `Processor cache is 0`
 
 ## Simulation Results
 
@@ -66,7 +66,7 @@ Node P[0] Seek block -> 273
 SHARED ---> SHARED
 ```
 
-
+------
 
 **Accesses number: 6**
 
@@ -94,7 +94,7 @@ Node P[0] Seek block -> 273
 SHARED ---> MODIFIED
 ```
 
-
+------
 
 **Accesses number: 7**
 
@@ -118,7 +118,7 @@ MODIFIED ---> MODIFIED
 MODIFIED ---> INVAILD
 ```
 
-
+------
 
 **Accesses number: 8**
 
@@ -146,7 +146,7 @@ Node P[1] Seek block -> 273
 INVAILD ---> MODIFIED
 ```
 
-
+------
 
 **Accesses number: 9** 
 
@@ -170,7 +170,7 @@ MODIFIED ---> MODIFIED
 MODIFIED ---> INVAILD
 ```
 
-
+------
 
 **Accesses number: 10**
 
@@ -198,6 +198,151 @@ Node P[1] Seek block -> 273
 ```
 INVAILD ---> MODIFIED
 ```
+
+
+------
+
+Accesses number: 11
+
+<img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/State_Transition%2011.PNG?raw=true" style="zoom:80%;" />
+
+```
+Node P[0] Seek block -> 273
+	1.- Reading request (PrRd)
+	2.- Hit in cache
+```
+
+**State Transition In Cache:**
+
+<img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/State_Transition%2011.PNG?raw=true" style="zoom:80%;" />
+
+
+
+```
+MODIFIED ---> MODIFIED
+
+MODIFIED ---> INVAILD
+```
+
+------
+
+Accesses number: 12
+
+<img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/State_Transition%2012.PNG?raw=true" style="zoom:80%;" />
+
+```
+Node P[0] Seek block -> 273
+	1.- Reading request (PrRd)
+	2.- Miss in cache
+	3.- Bus reading request (BusRd)
+	4.- The bus arbiter grants bus to node P0
+	5.- Transfer of block 273 from node P1
+	6.- Writeback in node P1 block 273
+		6a.- Writeback request (BusWb)
+		6b.- Transfer of block 273 to main memory
+```
+
+**State Transition In Cache:**
+
+<img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/State_Transition%2012.PNG?raw=true" style="zoom:80%;" />
+
+
+
+```
+INVAILD ---> SHARED
+```
+
+------
+
+Accesses number: 13
+
+<img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/State_Transition%2013.PNG?raw=true" style="zoom:80%;" />
+
+```
+Node P[0] Seek block -> 273
+	1.- Reading request (PrRd)
+	2.- Hit in cache
+```
+
+**State Transition In Cache:**
+
+<img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/State_Transition%2013.PNG?raw=true" style="zoom:80%;" />
+
+
+
+```
+SHARED ---> SHARED
+```
+
+------
+
+Accesses number: 14
+
+<img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/State_Transition%2014.PNG?raw=true" style="zoom:80%;" />
+
+```
+Node P[0] Seek block -> 273
+	1.- Reading request (PrRd)
+	2.- Hit in cache
+```
+
+**State Transition In Cache:**
+
+<img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/State_Transition%2014.PNG?raw=true" style="zoom:80%;" />
+
+
+
+```
+SHARED ---> SHARED
+```
+
+------
+
+Accesses number: 15
+
+<img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/State_Transition%2015.PNG?raw=true" style="zoom:80%;" />
+
+```
+Node P[0] Seek block -> 273
+	1.- Reading request (PrRd)
+	2.- Hit in cache
+```
+
+**State Transition In Cache:**
+
+<img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/State_Transition%2015.PNG?raw=true" style="zoom:80%;" />
+
+
+
+```
+SHARED ---> SHARED
+```
+
+---
+
+Accesses number: 16
+
+<img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/State_Transition%2016.PNG" style="zoom:80%;" />
+
+```
+Node P[0] Seek block -> 546
+	1.- Writing request (PrWr)
+	2.- Miss in cache
+	3.- Bus exclusive reading request (BusRdX)
+	4.- The bus arbiter grants bus to node P0
+	5.- Transfer of block 546 from main memory
+```
+
+**State Transition In Cache:**
+
+<img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/State_Transition%2016.PNG?raw=true" style="zoom:80%;" />
+
+
+
+```
+INVAILD ---> MODIFIED
+```
+
 
 
 
