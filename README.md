@@ -66,3 +66,134 @@ Node P[0] Seek block -> 273
 SHARED ---> SHARED
 ```
 
+
+
+**Accesses number: 6**
+
+<img src="F:\Project_CacheCoherence\CacheCoherence_CA\assets\Access_Number 6.PNG" style="zoom:80%;" /> 
+
+ ```
+Node P[0] Seek block -> 273
+
+	1.- Writing request (PrWr)
+
+	2.- Hit in cache
+
+	3.- Bus exclusive reading request (BusRdX)
+
+	4.- The bus arbiter grants bus to node P0
+
+	5.- Transfer of block 273 from main memory
+ ```
+
+**State Transition In Cache:**
+
+ <img src="F:\Project_CacheCoherence\CacheCoherence_CA\assets\State_Transition 6.PNG" style="zoom:80%;" /> 
+
+``` 
+SHARED ---> MODIFIED
+```
+
+**Accesses number: 7**
+
+<img src="F:\Project_CacheCoherence\CacheCoherence_CA\assets\Access_Number 7.PNG" style="zoom:80%;" /> 
+
+```
+Node P[0] Seek block -> 273
+
+	1.- Writing request (PrWr)
+
+	2.- Hit in cache
+```
+
+**State Transition In Cache:**
+
+ <img src="F:\Project_CacheCoherence\CacheCoherence_CA\assets\State_Transition 7.PNG" style="zoom:80%;" />
+
+``` 
+MODIFIED ---> MODIFIED
+
+MODIFIED ---> INVAILD
+```
+
+**Accesses number: 8**
+
+<img src="F:\Project_CacheCoherence\CacheCoherence_CA\assets\Access_Number 8.PNG" style="zoom:80%;" /> 
+
+```
+Node P[1] Seek block -> 273
+
+	1.- Writing request (PrWr)
+
+	2.- Miss in cache
+
+	3.- Bus exclusive reading request (BusRdX)
+
+	4.- The bus arbiter grants bus to node P0
+
+	5.- Transfer of block 273 from node P1
+```
+
+**State Transition In Cache:**
+
+  <img src="F:\Project_CacheCoherence\CacheCoherence_CA\assets\State_Transition 8.PNG" style="zoom:80%;" /> 
+
+```
+INVAILD ---> MODIFIED
+```
+
+**Accesses number: 9** 
+
+<img src="F:\Project_CacheCoherence\CacheCoherence_CA\assets\Access_Number 9.PNG" style="zoom:80%;" /> 
+
+```
+Node P[0] Seek block -> 273
+
+	1.- Writing request (PrWr)
+
+	2.- Hit in cache 
+```
+
+**State Transition In Cache:**
+
+ <img src="F:\Project_CacheCoherence\CacheCoherence_CA\assets\State_Transition 9.PNG" style="zoom:80%;" />
+
+```
+MODIFIED ---> MODIFIED
+
+MODIFIED ---> INVAILD
+```
+
+**Accesses number: 10**
+
+<img src="F:\Project_CacheCoherence\CacheCoherence_CA\assets\Access_Number 10.PNG" style="zoom:80%;" /> 
+
+```
+
+Node P[1] Seek block -> 273
+
+	1.- Writing request (PrWr)
+
+	2.- Miss in cache
+
+	3.- Bus exclusive reading request (BusRdX)
+
+	4.- The bus arbiter grants bus to node P0
+
+	5.- Transfer of block 273 from node P1
+```
+
+**State Transition In Cache:**
+
+ <img src="F:\Project_CacheCoherence\CacheCoherence_CA\assets\State_Transition 10.PNG" style="zoom:80%;" /> 
+
+
+
+```
+INVAILD ---> MODIFIED
+```
+
+
+
+
+
