@@ -6,9 +6,11 @@ We have studied about different snooping based Cache Coherence Protocols in clas
 
 To simulate the output we are using SMPCache simulator which comes with a pre-configured memory traces and different protocols configurations to be used for the simulation.
 
-#### Following is the **State Transition Diagram** for MSI Protocol
+#### The following is the **State Transition Diagram** for MSI Protocol:
 
 <img src="./assets/image9.png" alt="image-20220522074641709" style="zoom:67%;" />
+
+***
 
 **The basic MSI protocol with the Modified, Shared and Invalid states.**
 
@@ -407,12 +409,12 @@ P[1] : MODIFIED ---> INVALID
 <img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/20.PNG" style="zoom:80%;" />
 
 ```
-Node P[0] Seek block -> 546
+Node P[1] Seek block -> 546
 	1.- Writing request (PrWr)
 	2.- Miss in cache
 	3.- Bus exclusive reading request (BusRdX)
-	4.- The bus arbiter grants bus to node P0
-	5.- Transfer of block 546 from node P1
+	4.- The bus arbiter grants bus to node P1
+	5.- Transfer of block 546 from node P0
 ```
 
 **State Transition In Cache:**
