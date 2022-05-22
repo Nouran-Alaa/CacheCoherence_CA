@@ -6,13 +6,11 @@ We have studied about different snooping based Cache Coherence Protocols in clas
 
 To simulate the output we are using SMPCache simulator which comes with a pre-configured memory traces and different protocols configurations to be used for the simulation.
 
-#### The following is the **State Transition Diagram** for MSI Protocol:
+#### <ins>The following is the **State Transition Diagram** for MSI Protocol:</ins>
 
 <img src="./assets/image9.png" alt="image-20220522074641709" style="zoom:67%;" />
 
-***
-
-**The basic MSI protocol with the Modified, Shared and Invalid states.**
+**<ins>The basic MSI protocol with the Modified, Shared and Invalid states.</ins>**
 
 <img src="./assets/MSI.png" alt="alt text" style="zoom:80%;" />
 
