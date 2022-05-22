@@ -66,3 +66,138 @@ Node P[0] Seek block -> 273
 SHARED ---> SHARED
 ```
 
+
+
+**Accesses number: 6**
+
+<img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/Access_Number%206.PNG?raw=true" style="zoom:80%;" /> 
+
+ ```
+Node P[0] Seek block -> 273
+
+	1.- Writing request (PrWr)
+
+	2.- Hit in cache
+
+	3.- Bus exclusive reading request (BusRdX)
+
+	4.- The bus arbiter grants bus to node P0
+
+	5.- Transfer of block 273 from main memory
+ ```
+
+**State Transition In Cache:**
+
+<img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/State_Transition%206.PNG?raw=true" style="zoom:80%;" /> 
+
+``` 
+SHARED ---> MODIFIED
+```
+
+
+
+**Accesses number: 7**
+
+<img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/Access_Number%207.PNG?raw=true" style="zoom:80%;" /> 
+
+```
+Node P[0] Seek block -> 273
+
+	1.- Writing request (PrWr)
+
+	2.- Hit in cache
+```
+
+**State Transition In Cache:**
+
+<img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/State_Transition%207.PNG?raw=true" style="zoom:80%;" />
+
+``` 
+MODIFIED ---> MODIFIED
+
+MODIFIED ---> INVAILD
+```
+
+
+
+**Accesses number: 8**
+
+<img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/Access_Number%208.PNG?raw=true" style="zoom:80%;" /> 
+
+```
+Node P[1] Seek block -> 273
+
+	1.- Writing request (PrWr)
+
+	2.- Miss in cache
+
+	3.- Bus exclusive reading request (BusRdX)
+
+	4.- The bus arbiter grants bus to node P0
+
+	5.- Transfer of block 273 from node P1
+```
+
+**State Transition In Cache:**
+
+<img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/State_Transition%208.PNG?raw=true" style="zoom:80%;" /> 
+
+```
+INVAILD ---> MODIFIED
+```
+
+
+
+**Accesses number: 9** 
+
+<img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/Access_Number%209.PNG?raw=true" style="zoom:80%;" /> 
+
+```
+Node P[0] Seek block -> 273
+
+	1.- Writing request (PrWr)
+
+	2.- Hit in cache 
+```
+
+**State Transition In Cache:**
+
+<img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/State_Transition%209.PNG?raw=true" style="zoom:80%;" />
+
+```
+MODIFIED ---> MODIFIED
+
+MODIFIED ---> INVAILD
+```
+
+
+
+**Accesses number: 10**
+
+<img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/Access_Number%2010.PNG?raw=true" style="zoom:80%;" /> 
+
+```
+
+Node P[1] Seek block -> 273
+
+	1.- Writing request (PrWr)
+
+	2.- Miss in cache
+
+	3.- Bus exclusive reading request (BusRdX)
+
+	4.- The bus arbiter grants bus to node P0
+
+	5.- Transfer of block 273 from node P1
+```
+
+**State Transition In Cache:**
+
+<img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/State_Transition%2010.PNG?raw=true" style="zoom:80%;" /> 
+
+```
+INVAILD ---> MODIFIED
+```
+
+
+
