@@ -68,21 +68,16 @@ SHARED ---> SHARED
 
 ------
 
-**Accesses number: 6**
+> **Accesses number: 6**
 
 <img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/Access_Number%206.PNG?raw=true" style="zoom:80%;" /> 
 
  ```
 Node P[0] Seek block -> 273
-
 	1.- Writing request (PrWr)
-
 	2.- Hit in cache
-
 	3.- Bus exclusive reading request (BusRdX)
-
 	4.- The bus arbiter grants bus to node P0
-
 	5.- Transfer of block 273 from main memory
  ```
 
@@ -96,15 +91,13 @@ SHARED ---> MODIFIED
 
 ------
 
-**Accesses number: 7**
+> **Accesses number: 7**
 
 <img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/Access_Number%207.PNG?raw=true" style="zoom:80%;" /> 
 
 ```
 Node P[0] Seek block -> 273
-
 	1.- Writing request (PrWr)
-
 	2.- Hit in cache
 ```
 
@@ -120,21 +113,16 @@ MODIFIED ---> INVAILD
 
 ------
 
-**Accesses number: 8**
+> **Accesses number: 8**
 
 <img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/Access_Number%208.PNG?raw=true" style="zoom:80%;" /> 
 
 ```
 Node P[1] Seek block -> 273
-
 	1.- Writing request (PrWr)
-
 	2.- Miss in cache
-
 	3.- Bus exclusive reading request (BusRdX)
-
 	4.- The bus arbiter grants bus to node P0
-
 	5.- Transfer of block 273 from node P1
 ```
 
@@ -148,15 +136,13 @@ INVAILD ---> MODIFIED
 
 ------
 
-**Accesses number: 9** 
+> **Accesses number: 9** 
 
 <img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/Access_Number%209.PNG?raw=true" style="zoom:80%;" /> 
 
 ```
 Node P[0] Seek block -> 273
-
 	1.- Writing request (PrWr)
-
 	2.- Hit in cache 
 ```
 
@@ -172,22 +158,16 @@ MODIFIED ---> INVAILD
 
 ------
 
-**Accesses number: 10**
+> **Accesses number: 10**
 
 <img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/Access_Number%2010.PNG?raw=true" style="zoom:80%;" /> 
 
 ```
-
 Node P[1] Seek block -> 273
-
 	1.- Writing request (PrWr)
-
 	2.- Miss in cache
-
 	3.- Bus exclusive reading request (BusRdX)
-
 	4.- The bus arbiter grants bus to node P0
-
 	5.- Transfer of block 273 from node P1
 ```
 
@@ -202,7 +182,7 @@ INVAILD ---> MODIFIED
 
 ------
 
-Accesses number: 11
+> Accesses number: 11
 
 <img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/Access_Number%2011.png?raw=true" style="zoom:80%;" />
 
@@ -216,8 +196,6 @@ Node P[0] Seek block -> 273
 
 <img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/State_Transition%2011.png?raw=true" style="zoom:80%;" />
 
-
-
 ```
 MODIFIED ---> MODIFIED
 
@@ -226,7 +204,7 @@ MODIFIED ---> INVAILD
 
 ------
 
-Accesses number: 12
+> **Accesses number: 12**
 
 <img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/Access_Number%2012.PNG?raw=true" style="zoom:80%;" />
 
@@ -246,15 +224,13 @@ Node P[0] Seek block -> 273
 
 <img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/State_Transition%2012.png?raw=true" style="zoom:80%;" />
 
-
-
 ```
 INVAILD ---> SHARED
 ```
 
 ------
 
-Accesses number: 13
+> **Accesses number: 13**
 
 <img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/Access_Number%2013.png?raw=true" style="zoom:80%;" />
 
@@ -268,15 +244,13 @@ Node P[0] Seek block -> 273
 
 <img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/State_Transition%2013.png?raw=true" style="zoom:80%;" />
 
-
-
 ```
 SHARED ---> SHARED
 ```
 
 ------
 
-Accesses number: 14
+> **Accesses number: 14**
 
 <img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/Access_Number%2014.png?raw=true" style="zoom:80%;" />
 
@@ -290,15 +264,13 @@ Node P[0] Seek block -> 273
 
 <img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/State_Transition%2014.png?raw=true" style="zoom:80%;" />
 
-
-
 ```
 SHARED ---> SHARED
 ```
 
 ------
 
-Accesses number: 15
+> **Accesses number: 15**
 
 <img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/Access_Number%2015.png?raw=true" style="zoom:80%;" />
 
@@ -312,17 +284,15 @@ Node P[0] Seek block -> 273
 
 <img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/State_Transition%2015.png?raw=true" style="zoom:80%;" />
 
-
-
 ```
 SHARED ---> SHARED
 ```
 
 ---
 
-Accesses number: 16
+> **Accesses number: 16**
 
-<img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/Access_Number%2016.png" style="zoom:80%;" />
+<img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/Access_Number%2016.png?raw=true" style="zoom:80%;" />
 
 ```
 Node P[0] Seek block -> 546
@@ -337,8 +307,6 @@ Node P[0] Seek block -> 546
 
 <img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/State_Transition%2016.png?raw=true" style="zoom:80%;" />
 
-
-
 ```
 INVAILD ---> MODIFIED
 ```
@@ -346,7 +314,7 @@ INVAILD ---> MODIFIED
 ***
 > **Accesses number: 17**
 
-<img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/17.PNG" style="zoom:80%;" />
+<img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/17.PNG?raw=true" style="zoom:80%;" />
 
 ```
 Node P[0] Seek block -> 546
@@ -364,7 +332,7 @@ P[1] : MODIFIED ---> INVALID
 
 > **Accesses number: 18**
 
-<img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/18.PNG" style="zoom:80%;" />
+<img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/18.PNG?raw=true" style="zoom:80%;" />
 
 ```
 Node P[1] Seek block -> 546
@@ -385,7 +353,7 @@ P[1] : INVALID ---> MODIFIED
 
 > **Accesses number: 19**
 
-<img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/19.PNG" style="zoom:80%;" />
+<img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/19.PNG?raw=true" style="zoom:80%;" />
 
 ```
 Node P[0] Seek block -> 546
@@ -404,7 +372,7 @@ P[1] : MODIFIED ---> INVALID
 
 > **Accesses number: 20**
 
-<img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/20.PNG" style="zoom:80%;" />
+<img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/20.PNG?raw=true" style="zoom:80%;" />
 
 ```
 Node P[1] Seek block -> 546
@@ -424,7 +392,7 @@ P[1] : INVALID ---> MODIFIED
 
 > **Accesses number: 21**
 
-<img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/21.PNG" style="zoom:80%;" />
+<img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/21.PNG?raw=true" style="zoom:80%;" />
 
 ```
 Node P[0] Seek block -> 819
@@ -445,7 +413,7 @@ P[1] : MODIFIED ---> INVALID
 
 > **Accesses number: 22**
 
-<img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/22.PNG" style="zoom:80%;" />
+<img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/22.PNG?raw=true" style="zoom:80%;" />
 
 ```
 Node P[0] Seek block -> 1092
@@ -466,7 +434,7 @@ P[1] : MODIFIED ---> INVALID
 
 > **Accesses number: 23**
 
-<img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/23.png" style="zoom:80%;" />
+<img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/23.png?raw=true" style="zoom:80%;" />
 
 ```
 Node P[0] Seek block -> 1365
@@ -487,7 +455,7 @@ P[1] : MODIFIED ---> INVALID
 
 > **Accesses number: 24**
 
-<img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/24.png" style="zoom:80%;" />
+<img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/24.png?raw=true" style="zoom:80%;" />
 
 ```
 Node P[0] Seek block -> 1638
@@ -508,7 +476,7 @@ P[1] : MODIFIED ---> INVALID
 
 > **Accesses number: 25**
 
-<img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/25.png" style="zoom:80%;" />
+<img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/25.png?raw=true" style="zoom:80%;" />
 
 ```
 Node P[0] Seek block -> 1911
@@ -529,7 +497,7 @@ P[1] : MODIFIED ---> INVALID
 
 > **Accesses number: 26**
 
-<img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/26.png" style="zoom:80%;" />
+<img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/26.png?raw=true" style="zoom:80%;" />
 
 ```
 Node P[0] Seek block -> 2184
@@ -550,7 +518,7 @@ P[1] : MODIFIED ---> INVALID
 
 > **Accesses number: 27**
 
-<img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/27.png" style="zoom:80%;" />
+<img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/27.png?raw=true" style="zoom:80%;" />
 
 ```
 Node P[0] Seek block -> 2457
