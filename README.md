@@ -325,8 +325,8 @@ Node P[0] Seek block -> 546
 **State Transition In Cache:**
 
 ```
-P[0] : MODIFIED ---> MODIFIED
-P[1] : MODIFIED ---> INVALID
+MODIFIED ---> MODIFIED
+MODIFIED ---> INVALID
 ```
 ***
 
@@ -335,18 +335,18 @@ P[1] : MODIFIED ---> INVALID
 <img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/18.PNG?raw=true" style="zoom:80%;" />
 
 ```
-Node P[1] Seek block -> 546
+Node P[0] Seek block -> 546
 	1.- Writing request (PrWr)
 	2.- Miss in cache
 	3.- Bus exclusive reading request (BusRdX)
-	4.- The bus arbiter grants bus to node P1
-	5.- Transfer of block 546 from node P0
+	4.- The bus arbiter grants bus to node P0
+	5.- Transfer of block 546 from node P1
 ```
 
 **State Transition In Cache:**
 
 ```
-P[1] : INVALID ---> MODIFIED
+INVALID ---> MODIFIED
 ```
 
 ***
@@ -364,8 +364,8 @@ Node P[0] Seek block -> 546
 **State Transition In Cache:**
 
 ```
-P[0] : MODIFIED ---> MODIFIED 
-P[1] : MODIFIED ---> INVALID
+MODIFIED ---> MODIFIED 
+MODIFIED ---> INVALID
 ```
 
 ***
@@ -375,18 +375,18 @@ P[1] : MODIFIED ---> INVALID
 <img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/20.PNG?raw=true" style="zoom:80%;" />
 
 ```
-Node P[1] Seek block -> 546
+Node P[0] Seek block -> 546
 	1.- Writing request (PrWr)
 	2.- Miss in cache
 	3.- Bus exclusive reading request (BusRdX)
-	4.- The bus arbiter grants bus to node P1
-	5.- Transfer of block 546 from node P0
+	4.- The bus arbiter grants bus to node P0
+	5.- Transfer of block 546 from node P1
 ```
 
 **State Transition In Cache:**
 
 ```
-P[1] : INVALID ---> MODIFIED
+INVALID ---> MODIFIED
 ```
 ***
 
@@ -406,8 +406,8 @@ Node P[0] Seek block -> 819
 **State Transition In Cache:**
 
 ```
-P[0] : INVALID ---> MODIFIED
-P[1] : MODIFIED ---> INVALID
+INVALID ---> MODIFIED
+MODIFIED ---> INVALID
 ```
 ***
 
@@ -427,8 +427,8 @@ Node P[0] Seek block -> 1092
 **State Transition In Cache:**
 
 ```
-P[0] : INVALID ---> MODIFIED
-P[1] : MODIFIED ---> INVALID
+INVALID ---> MODIFIED
+MODIFIED ---> INVALID
 ```
 ***
 
