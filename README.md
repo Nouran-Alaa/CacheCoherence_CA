@@ -49,6 +49,7 @@ Node P[0] Seek block -> 273
 ```
 INVALID ---> SHARED
 ```
+------
 
 >  **Accesses number: 2, 3, 4, 5**
 
