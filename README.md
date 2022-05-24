@@ -118,7 +118,7 @@ MODIFIED ---> INVAILD
 <img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/Access_Number%208.PNG?raw=true" style="zoom:80%;" /> 
 
 ```
-Node P[1] Seek block -> 273
+Node P[0] Seek block -> 273
 	1.- Writing request (PrWr)
 	2.- Miss in cache
 	3.- Bus exclusive reading request (BusRdX)
@@ -163,7 +163,7 @@ MODIFIED ---> INVAILD
 <img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/Access_Number%2010.PNG?raw=true" style="zoom:80%;" /> 
 
 ```
-Node P[1] Seek block -> 273
+Node P[0] Seek block -> 273
 	1.- Writing request (PrWr)
 	2.- Miss in cache
 	3.- Bus exclusive reading request (BusRdX)
