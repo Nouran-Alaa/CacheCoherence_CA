@@ -107,7 +107,7 @@ Node P[0] Seek block -> 273
 <img src="https://github.com/Nouran-Alaa/CacheCoherence_CA/blob/main/assets/State_Transition%207.PNG?raw=true" style="zoom:80%;" />
 
 ``` 
-MODIFIED ---> MODIFIED
+P[0]: MODIFIED ---> MODIFIED
 
 MODIFIED ---> INVAILD
 ```
